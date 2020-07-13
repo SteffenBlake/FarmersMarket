@@ -29,150 +29,150 @@ SOFTWARE.
 ; Have any questions? Want to ask me anything? Feel free to hit me up on my twitch! https://www.twitch.tv/pixxelkick
 ; Live streaming during the evening!
 
-; === Modify your prices below, examples: "20c", "10ex", "3mir" ===
+; === Modify your prices below, examples: "20c", "10ex", "3mir", leave as "-" to ignore ===
 
 ; == Remove ==
 ; {Remove} a random {****} modifier from an item
-Rmv_Phys := "---"
-Rmv_Attack := "---"
-Rmv_Lightning := "---"
-Rmv_Cold := "---"
-Rmv_Defense := "---"
-Rmv_Chaos := "---"
-Rmv_Life := "---"
-Rmv_Caster := "---"
-Rmv_Fire := "---"
-Rmv_Speed := "---"
-Rmv_Critical := "---"
-Rmv_Influence := "---"
+Rmv_Phys := "-"
+Rmv_Attack := "-"
+Rmv_Lightning := "-"
+Rmv_Cold := "-"
+Rmv_Defense := "-"
+Rmv_Chaos := "-"
+Rmv_Life := "-"
+Rmv_Caster := "-"
+Rmv_Fire := "-"
+Rmv_Speed := "-"
+Rmv_Critical := "-"
+Rmv_Influence := "-"
 
 ; == Remove > Add ==
 ; {Remove} a random {****} modifier from an item and {add} a new {****} modifier
-RmvAdd_Phys := "---"
-RmvAdd_Attack:= "---"
-RmvAdd_Lightning:= "---"
-RmvAdd_Cold:= "---"
-RmvAdd_Defense:= "---"
-RmvAdd_Chaos:= "---"
-RmvAdd_Life:= "---"
-RmvAdd_Caster:= "---"
-RmvAdd_Fire:= "---"
-RmvAdd_Speed:= "---"
-RmvAdd_Critical:= "---"
-RmvAdd_Influence:= "---"
+RmvAdd_Phys := "-"
+RmvAdd_Attack:= "-"
+RmvAdd_Lightning:= "-"
+RmvAdd_Cold:= "-"
+RmvAdd_Defense:= "-"
+RmvAdd_Chaos:= "-"
+RmvAdd_Life:= "-"
+RmvAdd_Caster:= "-"
+RmvAdd_Fire:= "-"
+RmvAdd_Speed:= "-"
+RmvAdd_Critical:= "-"
+RmvAdd_Influence:= "-"
 
 ; == Remove Non > Add ==
 ; {Remove} a random {non-****} modifier from an item and {add} a new {****} modifier
-RmvNonAdd_Phys:= "---"
-RmvNonAdd_Attack:= "---"
-RmvNonAdd_Lightning:= "---"
-RmvNonAdd_Cold:= "---"
-RmvNonAdd_Defense:= "---"
-RmvNonAdd_Chaos:= "---"
-RmvNonAdd_Life:= "---"
-RmvNonAdd_Caster:= "---"
-RmvNonAdd_Fire:= "---"
-RmvNonAdd_Speed:= "---"
-RmvNonAdd_Critical:= "---"
-RmvNonAdd_Influence:= "---"
+RmvNonAdd_Phys:= "-"
+RmvNonAdd_Attack:= "-"
+RmvNonAdd_Lightning:= "-"
+RmvNonAdd_Cold:= "-"
+RmvNonAdd_Defense:= "-"
+RmvNonAdd_Chaos:= "-"
+RmvNonAdd_Life:= "-"
+RmvNonAdd_Caster:= "-"
+RmvNonAdd_Fire:= "-"
+RmvNonAdd_Speed:= "-"
+RmvNonAdd_Critical:= "-"
+RmvNonAdd_Influence:= "-"
 
 ; == Augment (Normal) == 
 ; {Augment} a Magic or Rare item with a new {****} modifier
-Augment_Phys:= "---"
-Augment_Attack:= "---"
-Augment_Lightning:= "---"
-Augment_Cold:= "---"
-Augment_Defense:= "---"
-Augment_Chaos:= "---"
-Augment_Life:= "---"
-Augment_Caster:= "---"
-Augment_Fire:= "---"
-Augment_Speed:= "---"
-Augment_Critical:= "---"
-Augment_Influence:= "---"
+Augment_Phys:= "-"
+Augment_Attack:= "-"
+Augment_Lightning:= "-"
+Augment_Cold:= "-"
+Augment_Defense:= "-"
+Augment_Chaos:= "-"
+Augment_Life:= "-"
+Augment_Caster:= "-"
+Augment_Fire:= "-"
+Augment_Speed:= "-"
+Augment_Critical:= "-"
+Augment_Influence:= "-"
 
 ; == Augment (Lucky) ==
 ; {Augment} a Magic or Rare item with a new {****} modifier with Lucky values
-AugmentLucky_Phys:= "---"
-AugmentLucky_Attack:= "---"
-AugmentLucky_Lightning:= "---"
-AugmentLucky_Cold:= "---"
-AugmentLucky_Defense:= "---"
-AugmentLucky_Chaos:= "---"
-AugmentLucky_Life:= "---"
-AugmentLucky_Caster:= "---"
-AugmentLucky_Fire:= "---"
-AugmentLucky_Speed:= "---"
-AugmentLucky_Critical:= "---"
-AugmentLucky_Influence:= "---"
+AugmentLucky_Phys:= "-"
+AugmentLucky_Attack:= "-"
+AugmentLucky_Lightning:= "-"
+AugmentLucky_Cold:= "-"
+AugmentLucky_Defense:= "-"
+AugmentLucky_Chaos:= "-"
+AugmentLucky_Life:= "-"
+AugmentLucky_Caster:= "-"
+AugmentLucky_Fire:= "-"
+AugmentLucky_Speed:= "-"
+AugmentLucky_Critical:= "-"
+AugmentLucky_Influence:= "-"
 
 ; == Randomise ==
 ; {Randomise} the numeric values of the random {****} modifiers on a Magic or Rare item
-Randomise_Phys:= "---"
-Randomise_Attack:= "---"
-Randomise_Lightning:= "---"
-Randomise_Cold:= "---"
-Randomise_Defense:= "---"
-Randomise_Chaos:= "---"
-Randomise_Life:= "---"
-Randomise_Caster:= "---"
-Randomise_Fire:= "---"
-Randomise_Speed:= "---"
-Randomise_Critical:= "---"
-Randomise_Influence:= "---"
+Randomise_Phys:= "-"
+Randomise_Attack:= "-"
+Randomise_Lightning:= "-"
+Randomise_Cold:= "-"
+Randomise_Defense:= "-"
+Randomise_Chaos:= "-"
+Randomise_Life:= "-"
+Randomise_Caster:= "-"
+Randomise_Fire:= "-"
+Randomise_Speed:= "-"
+Randomise_Critical:= "-"
+Randomise_Influence:= "-"
 
 ; == Change Resist ==
 ; {Change} a modifier that grants {****} Resistance into a similar-tier modifier that grants {****} Resistance
-Fire_To_Cold:= "---"
-Fire_To_Lightning:= "---"
-Cold_To_Fire:= "---"
-Cold_To_Lightning:= "---"
-Lightning_To_Fire:= "---"
-Lightning_To_Cold:= "---"
+Fire_To_Cold:= "-"
+Fire_To_Lightning:= "-"
+Cold_To_Fire:= "-"
+Cold_To_Lightning:= "-"
+Lightning_To_Fire:= "-"
+Lightning_To_Cold:= "-"
 
 ; == Sockets ==
-Sockets_x10:= "---"                ; Reforge the {number of sockets} on an item 10 times, using the outcome with the greatest number of sockets
-Sockets_6S:= "---"
-Sockets_5S:= "---"
-Sockets_4S:= "---"
-Sockets_3S:= "---"
+Sockets_x10:= "-"                ; Reforge the {number of sockets} on an item 10 times, using the outcome with the greatest number of sockets
+Sockets_6S:= "-"
+Sockets_5S:= "-"
+Sockets_4S:= "-"
+Sockets_3S:= "-"
 
 ; == Socket Colors ==
-Color_x10:= "---"                  ; Reforge the {colours of sockets} on an item 10 times, using the outcome with the greatest number of less-common socket colours
-Color_White:= "---"                ; Reforge the colour of a random {socket} on an item, turning it {White}
-Color_Blue:= "---"                 ; Reforge the colour of a {non-Blue} socket on an item, turning it {Blue}
-Color_Green:= "---"                ; Reforge the colour of a {non-Green} socket on an item, turning it {Green}
-Color_Red:= "---"                  ; Reforge the colour of a {non-Red} socket on an item, turning it {Red}
-Color_RedBlueGreen:= "---"         ; Reforge the colour of {three random} sockets on an item, turning them {Red, Green and Blue}
-Color_BlueGreen:= "---"            ; Reforge the colour of {two random} sockets on an item, turning them {Blue and Green}
-Color_RedBlue:= "---"              ; Reforge the colour of {two random} sockets on an item, turning them {Red and Blue}
-Color_RedGreen:= "---"             ; Reforge the colour of {two random} sockets on an item, turning them {Red and Green}
+Color_x10:= "-"                  ; Reforge the {colours of sockets} on an item 10 times, using the outcome with the greatest number of less-common socket colours
+Color_White:= "-"                ; Reforge the colour of a random {socket} on an item, turning it {White}
+Color_Blue:= "-"                 ; Reforge the colour of a {non-Blue} socket on an item, turning it {Blue}
+Color_Green:= "-"                ; Reforge the colour of a {non-Green} socket on an item, turning it {Green}
+Color_Red:= "-"                  ; Reforge the colour of a {non-Red} socket on an item, turning it {Red}
+Color_RedBlueGreen:= "-"         ; Reforge the colour of {three random} sockets on an item, turning them {Red, Green and Blue}
+Color_BlueGreen:= "-"            ; Reforge the colour of {two random} sockets on an item, turning them {Blue and Green}
+Color_RedBlue:= "-"              ; Reforge the colour of {two random} sockets on an item, turning them {Red and Blue}
+Color_RedGreen:= "-"             ; Reforge the colour of {two random} sockets on an item, turning them {Red and Green}
 
 ; == Socket Colors ==
-Links_x10:= "---"                  ; Reforge the {links between sockets} on an item 10 times, using the outcome with the greatest number of linked sockets
-Links_6L:= "---"
-Links_5L:= "---"
-Links_4L:= "---"
-Links_3L:= "---"
+Links_x10:= "-"                  ; Reforge the {links between sockets} on an item 10 times, using the outcome with the greatest number of linked sockets
+Links_6L:= "-"
+Links_5L:= "-"
+Links_4L:= "-"
+Links_3L:= "-"
 
 ; == Influence ==
-Influence_Weapon:= "---"
-Influence_Armor:= "---"
-Influence_Jewellery:= "---"
+Influence_Weapon:= "-"
+Influence_Armor:= "-"
+Influence_Jewellery:= "-"
 
 ; == Other ==
-Synth_Implicit:= "---"
-Fracture_5Affix:= "---"
-Fracture_3Prefix:= "---"
-Fracture_3Suffix:= "---"
-KeepPrefixes_Normal:= "---"       ; Reforge a Rare item, keeping all {Prefixes}
-KeepPrefixes_Lucky:= "---"        ; Reforge a Rare item with Lucky modifier values, keeping all {Prefixes}
-KeepSuffixes_Normal:= "---"       ; Reforge a Rare item, keeping all {Suffixes}
-KeepSuffixes_Lucky:= "---"        ; Reforge a Rare item with Lucky modifier values, keeping all {Suffixes}
-Reroll_Lucky:= "---"
-Jewel_Implicit_Normal:= "---"     ; Set implicit on Cobalt/Viridian/Crimson/Prismatic jewel
-Jewel_Implicit_Special:= "---"    ; Set implicit on Timeless or Abyss jewel
-Jewel_Implicit_Cluster:= "---"    ; Set implicit on Cluster Jewel
+Synth_Implicit:= "-"
+Fracture_5Affix:= "-"
+Fracture_3Prefix:= "-"
+Fracture_3Suffix:= "-"
+KeepPrefixes_Normal:= "-"       ; Reforge a Rare item, keeping all {Prefixes}
+KeepPrefixes_Lucky:= "-"        ; Reforge a Rare item with Lucky modifier values, keeping all {Prefixes}
+KeepSuffixes_Normal:= "-"       ; Reforge a Rare item, keeping all {Suffixes}
+KeepSuffixes_Lucky:= "-"        ; Reforge a Rare item with Lucky modifier values, keeping all {Suffixes}
+Reroll_Lucky:= "-"
+Jewel_Implicit_Normal:= "-"     ; Set implicit on Cobalt/Viridian/Crimson/Prismatic jewel
+Jewel_Implicit_Special:= "-"    ; Set implicit on Timeless or Abyss jewel
+Jewel_Implicit_Cluster:= "-"    ; Set implicit on Cluster Jewel
 
 ; ==============================================================================
 ; WARNING, DO NOT MODIFY ANYTHING BELOW THIS LINE, ACTUAL FUNCTIONALITY IS BELOW
