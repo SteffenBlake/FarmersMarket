@@ -174,6 +174,12 @@ Jewel_Implicit_Normal:= "-"     ; Set implicit on Cobalt/Viridian/Crimson/Prisma
 Jewel_Implicit_Special:= "-"    ; Set implicit on Timeless or Abyss jewel
 Jewel_Implicit_Cluster:= "-"    ; Set implicit on Cluster Jewel
 
+; You can modify your keybind here, see AHK's documentation on keybinds here: https://www.autohotkey.com/docs/Hotkeys.htm
+; By default we are set to '!w' or, 'Alt W'
+!w Up::
+    SetHorticraft() 
+    return;
+
 ; ==============================================================================
 ; WARNING, DO NOT MODIFY ANYTHING BELOW THIS LINE, ACTUAL FUNCTIONALITY IS BELOW
 ; ==============================================================================
@@ -435,7 +441,8 @@ valuedictionary[RAW_Jewel_Implicit_Normal] := Jewel_Implicit_Normal
 valuedictionary[RAW_Jewel_Implicit_Special] := Jewel_Implicit_Special 
 valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster 
 
-!c Up::
+SetHorticraft() 
+{
     clipboard := ""
     Send ^c
     ClipWait
@@ -472,14 +479,12 @@ valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster
 
     clipboard := outputText
 
-    Tooltip, Price copied to clipboard!
-    SetTimer, RemoveToolTip, -1000
+    ; Right click on the item in stash
+    Click, right
+    ; Paste into the Note
+    Send ^v
+    ; Click enter to close and set the note, this is our "One server side action"
+    Send {Enter}
+
     return
-
-
-
-RemoveToolTip:
-ToolTip
-return
-
-
+}
