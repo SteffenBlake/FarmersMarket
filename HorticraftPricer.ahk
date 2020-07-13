@@ -437,12 +437,14 @@ valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster
 
 ; You can modify your keybind here, see AHK's documentation on keybinds here: https://www.autohotkey.com/docs/Hotkeys.htm
 ; By default we are set to '!w' or, 'Alt W'
-!w Up::
+!c Up::
     clipboard := ""
     Send ^c
     ClipWait
     itemInfo := clipboard
     clipboard := ""
+	nrOfMatchingLines := 0
+	timesToLoop := 0
 
     itemLines := StrSplit(itemInfo, "`n")
 
@@ -464,13 +466,31 @@ valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster
             IfInString, itemLine, %rawVal%
             {
                 outPrice := price
+				nrOfMatchingLines+=1
                 Break
             }
         }
 
         ; Append our found price, which will be "-" if no match was found
-        outputText := outputText "/" outPrice
+        outputText := outputText outPrice "/"
+
     }
+	if (nrOfMatchingLines > 0)
+	{
+		; Append remaining "-" to the note
+		timesToLoop := 3-nrOfMatchingLines
+		while (timesToLoop > 0)
+		{
+			timesToLoop-=1
+			if (timesToLoop=0)
+			{
+				outputText := outputText "-"
+				break
+			}
+			outputText := outputText "-/"
+			
+		}
+	}
 
     clipboard := outputText
 
