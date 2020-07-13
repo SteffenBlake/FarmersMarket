@@ -178,7 +178,7 @@ Jewel_Implicit_Cluster:= "-"    ; Set implicit on Cluster Jewel
 ; By default we are set to '!w' or, 'Alt W'
 !w Up::
     SetHorticraft() 
-    return;
+    return
 
 ; ==============================================================================
 ; WARNING, DO NOT MODIFY ANYTHING BELOW THIS LINE, ACTUAL FUNCTIONALITY IS BELOW
