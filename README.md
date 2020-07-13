@@ -32,7 +32,7 @@ Simply set any of these values you wish to use to what you prefer. There is curr
 
 Step 4: Once you have set your prices, save your changes to `HorticraftPricer.ahk`, then double click it to run it with autohotkey, if all went well you should now have an icon for the script on your toolbar 
 
-Step 5: At the moment I have the command bound to Alt+C, so hover over a horticrafting station in game and simply press Alt+C and it will automatically compile the note that can be parsed by https://forbiddenharvest.com/
+Step 5: At the moment I have the command bound to Alt+W, so hover over a horticrafting station in game and simply press Alt+W and it will automatically compile the note that can be parsed by https://forbiddenharvest.com/
 
 Step 6: Assuming the horticraft station is sitting in a public tab, right click on it and paste the note that is now already in your clipboard as the new note for that station.
 
