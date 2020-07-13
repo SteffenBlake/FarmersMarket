@@ -1,7 +1,6 @@
 # FarmersMarket
 This is a super simple and lightweight Autohotkey script I created to simplify pricing Horticrafting stations in Path of Exile. Adheres to GGGs "One action = One Action" rule for tools, in fact it doesn't perform ANY server side actions at all.
 
-
 # How to use
 
 Step 1: Download and install the latest version of AutoHotKey if you dont have it: https://www.autohotkey.com/
@@ -38,3 +37,10 @@ Step 5: At the moment I have the command bound to Alt+C, so hover over a horticr
 Step 6: Assuming the horticraft station is sitting in a public tab, right click on it and paste the note that is now already in your clipboard as the new note for that station.
 
 Step 7: Repeat this process for any other horticraft stations you wish to price!
+
+# Questions, Info, Want to come see me working away?
+
+Feel free to hit me up on my twitch! 
+https://www.twitch.tv/pixxelkick
+
+I stream many evenings and am welcome to feature requests and bug reports (Though for bug reports you can just use the github report bug feature!)
