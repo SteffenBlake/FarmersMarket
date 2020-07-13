@@ -47,3 +47,4 @@ Gonna list of potential features I might add in the future here to kind of keep 
 - [ ] Add keybind for `/harvest` command to teleport to your garden
 - [ ] Learn how to use AHK's UI stuff to create an actual interactable UI to modify all the config values
 - [ ] Perhaps maybe figure out a way to use search mechanisms to find out suggested prices for things, and cache them?
+- [ ] Support all the other remaining mods!
