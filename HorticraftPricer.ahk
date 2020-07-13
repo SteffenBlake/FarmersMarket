@@ -469,10 +469,10 @@ valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster
         }
 
         ; Append our found price, which will be "-" if no match was found
-        outputText := outputText "/" outPrice
+		outputText := outputText outPrice "/"
     }
-
-    clipboard := outputText
+	
+    clipboard := RegExReplace( outputText, "\/$" )
 
     ; Right click on the item in stash
     Click, right
