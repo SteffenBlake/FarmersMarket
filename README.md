@@ -44,3 +44,9 @@ Feel free to hit me up on my twitch!
 https://www.twitch.tv/pixxelkick
 
 I stream many evenings and am welcome to feature requests and bug reports (Though for bug reports you can just use the github report bug feature!)
+
+# Future stuff
+Gonna list of potential features I might add in the future here to kind of keep track of stuff I may or may not add.
+- [ ] Add keybind for `/harvest` command to teleport to your garden
+- [ ] Learn how to use AHK's UI stuff to create an actual interactable UI to modify all the config values
+- [ ] Perhaps maybe figure out a way to use search mechanisms to find out suggested prices for things, and cache them?
