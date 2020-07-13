@@ -440,7 +440,11 @@ valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster
 !w Up::
     clipboard := ""
     Send ^c
-    ClipWait
+    ClipWait, 0
+	if ErrorLevel
+	{
+		return
+	}
     itemInfo := clipboard
     clipboard := ""
 
