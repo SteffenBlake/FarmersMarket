@@ -174,12 +174,6 @@ Jewel_Implicit_Normal:= "-"     ; Set implicit on Cobalt/Viridian/Crimson/Prisma
 Jewel_Implicit_Special:= "-"    ; Set implicit on Timeless or Abyss jewel
 Jewel_Implicit_Cluster:= "-"    ; Set implicit on Cluster Jewel
 
-; You can modify your keybind here, see AHK's documentation on keybinds here: https://www.autohotkey.com/docs/Hotkeys.htm
-; By default we are set to '!w' or, 'Alt W'
-!w Up::
-    SetHorticraft() 
-    return
-
 ; ==============================================================================
 ; WARNING, DO NOT MODIFY ANYTHING BELOW THIS LINE, ACTUAL FUNCTIONALITY IS BELOW
 ; ==============================================================================
@@ -441,8 +435,9 @@ valuedictionary[RAW_Jewel_Implicit_Normal] := Jewel_Implicit_Normal
 valuedictionary[RAW_Jewel_Implicit_Special] := Jewel_Implicit_Special 
 valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster 
 
-SetHorticraft() 
-{
+; You can modify your keybind here, see AHK's documentation on keybinds here: https://www.autohotkey.com/docs/Hotkeys.htm
+; By default we are set to '!w' or, 'Alt W'
+!w Up::
     clipboard := ""
     Send ^c
     ClipWait
@@ -487,4 +482,3 @@ SetHorticraft()
     Send {Enter}
 
     return
-}
