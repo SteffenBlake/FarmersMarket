@@ -472,7 +472,7 @@ valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster
 		outputText := outputText outPrice "/"
     }
 	
-    clipboard := RegExReplace( outputText, "\/$" )
+    clipboard := SubStr(outputText, 1, -1)
 
     ; Right click on the item in stash
     Click, right
