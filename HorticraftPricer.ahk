@@ -160,6 +160,25 @@ Influence_Weapon := "-"
 Influence_Armor := "-"
 Influence_Jewellery := "-"
 
+
+; == Enchant Weapon ==
+Enchant_AoE := "-"
+Enchant_Ele := "-"
+Enchant_Range := "-"
+Enchant_Accuracy := "-"
+Enchant_AttackSpeed := "-"
+Enchant_Crit := "-"
+
+; == Enchant Body Armour ==
+Enchant_Life := "-"
+Enchant_Str := "-"
+Enchant_Mana := "-"
+Enchant_Dex := "-"
+Enchant_Int := "-"
+Enchant_Fire := "-"
+Enchant_Cold := "-"
+Enchant_Lightning := "-"
+
 ; == Other ==
 Synth_Implicit := "-"
 Fracture_5Affix := "-"
@@ -301,6 +320,24 @@ RAW_Influence_Weapon := "Add a random Influence to a Normal, Magic or Rare Weapo
 RAW_Influence_Armor := "Add a random Influence to Normal, Magic or Rare Armour that isn't influenced"
 RAW_Influence_Jewellery := "Add a random Influence to Normal, Magic or Rare Jewellery that isn't influenced"
 
+; == Enchant Weapon == 
+RAW_Enchant_AoE := "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Area of Effect per 4% Quality"
+RAW_Enchant_Ele := "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Elemental Damage per 2% Quality"
+RAW_Enchant_Range := "Enchant a Melee Weapon. Quality does not increase its Physical Damage, has +1 Weapon Range per 10% Quality"
+RAW_Enchant_Accuracy := "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Accuracy per 2% Quality"
+RAW_Enchant_AttackSpeed := "Enchant a Weapon. Quality does not increase its Physical Damage, has 1% increased Attack Speed per 8% Quality"
+RAW_Enchant_Crit := "Enchant a Weapon. Quality does not increase its Physical Damage, has 1% increased Critical Strike Chance per 4% Quality"
+
+; == Enchant Body Armour ==
+RAW_Enchant_Life := "Enchant Body Armour. Quality does not increase its Defences, grants +1 Maximum Life per 2% quality"
+RAW_Enchant_Str := "Enchant Body Armour. Quality does not increase its Defences, grants +1 Strength per 2% quality"
+RAW_Enchant_Mana := "Enchant Body Armour. Quality does not increase its Defences, grants +1 Maximum Mana per 2% quality"
+RAW_Enchant_Dex := "Enchant Body Armour. Quality does not increase its Defences, grants +1 Dexterity per 2% quality"
+RAW_Enchant_Int := "Enchant Body Armour. Quality does not increase its Defences, grants +1 Intelligence per 2% quality"
+RAW_Enchant_Fire := "Enchant Body Armour. Quality does not increase its Defences, grants 1% Fire Resistance per 2% quality"
+RAW_Enchant_Cold := "Enchant Body Armour. Quality does not increase its Defences, grants 1% Cold Resistance per 2% quality"
+RAW_Enchant_Lightning := "Enchant Body Armour. Quality does not increase its Defences, grants 1% Lightning Resistance per 2% quality"
+
 ; == Other ==
 RAW_Synth_Implicit := "Synthesise an item, giving random Synthesised implicits"
 RAW_Fracture_5Affix := "Fracture a random modifier on an item with at least 5 modifiers, locking it in place"
@@ -431,6 +468,20 @@ if (DEBUG)
     Jewel_Implicit_Normal := "Jewel_Implicit_Normal"  
     Jewel_Implicit_Special := "Jewel_Implicit_Special" 
     Jewel_Implicit_Cluster := "Jewel_Implicit_Cluster" 
+    Enchant_AoE := "Enchant_AoE"
+    Enchant_Ele := "Enchant_Ele"
+    Enchant_Range := "Enchant_Range"
+    Enchant_Accuracy := "Enchant_Accuracy"
+    Enchant_AttackSpeed := "Enchant_AttackSpeed"
+    Enchant_Crit := "Enchant_Crit"
+    Enchant_Life := "Enchant_Life"
+    Enchant_Str := "Enchant_Str"
+    Enchant_Mana := "Enchant_Mana"
+    Enchant_Dex := "Enchant_Dex"
+    Enchant_Int := "Enchant_Int"
+    Enchant_Fire := "Enchant_Fire"
+    Enchant_Cold := "Enchant_Cold"
+    Enchant_Lightning := "Enchant_Lightning"
 }
 
 
@@ -550,6 +601,20 @@ valuedictionary[RAW_Reroll_Lucky] := Reroll_Lucky
 valuedictionary[RAW_Jewel_Implicit_Normal] := Jewel_Implicit_Normal  
 valuedictionary[RAW_Jewel_Implicit_Special] := Jewel_Implicit_Special 
 valuedictionary[RAW_Jewel_Implicit_Cluster] := Jewel_Implicit_Cluster 
+valueDictionary[RAW_Enchant_AoE] := Enchant_AoE
+valueDictionary[RAW_Enchant_Ele] := Enchant_Ele
+valueDictionary[RAW_Enchant_Range] := Enchant_Range  
+valueDictionary[RAW_Enchant_Accuracy] := Enchant_Accuracy  
+valueDictionary[RAW_Enchant_AttackSpeed] := Enchant_AttackSpeed 
+valueDictionary[RAW_Enchant_Crit] := Enchant_Crit  
+valueDictionary[RAW_Enchant_Life] := Enchant_Life  
+valueDictionary[RAW_Enchant_Str] := Enchant_Str  
+valueDictionary[RAW_Enchant_Mana] := Enchant_Mana  
+valueDictionary[RAW_Enchant_Dex] := Enchant_Dex  
+valueDictionary[RAW_Enchant_Int] := Enchant_Int  
+valueDictionary[RAW_Enchant_Fire] := Enchant_Fire  
+valueDictionary[RAW_Enchant_Cold] := Enchant_Cold  
+valueDictionary[RAW_Enchant_Lightning] := Enchant_Lightning 
 
 ; You can modify your keybind here, see AHK's documentation on keybinds here: https://www.autohotkey.com/docs/Hotkeys.htm
 ; By default we are set to '!w' or, 'Alt W'
