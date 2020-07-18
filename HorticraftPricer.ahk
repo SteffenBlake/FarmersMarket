@@ -341,8 +341,8 @@ RAW_Enchant_Lightning := "Enchant Body Armour. Quality does not increase its Def
 ; == Other ==
 RAW_Synth_Implicit := "Synthesise an item, giving random Synthesised implicits"
 RAW_Fracture_5Affix := "Fracture a random modifier on an item with at least 5 modifiers, locking it in place"
-RAW_Fracture_3Prefix := "Fracture a random Suffix on an item with least 3 Suffixes"
-RAW_Fracture_3Suffix := "Fracture a random Prefix on an item with at least 3 Prefixes"
+RAW_Fracture_3Suffix := "Fracture a Prefix on an item with at least 3 Prefixes"
+RAW_Fracture_3Prefix := "Fracture a Suffix on an item with at least 3 Suffixes"
 RAW_KeepPrefixes_Normal := "Reforge a Rare item, keeping all Prefixes"
 RAW_KeepPrefixes_Lucky := "Reforge a Rare item with Lucky modifier values, keeping all Prefixes"
 RAW_KeepSuffixes_Normal := "Reforge a Rare item, keeping all Suffixes"
