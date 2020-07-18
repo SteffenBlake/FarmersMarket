@@ -237,7 +237,7 @@ RAW_RmvNonAdd_Life := "Remove a random non-Life modifier from an item and add a 
 RAW_RmvNonAdd_Caster := "Remove a random non-Caster modifier from an item and add a new Caster modifier"
 RAW_RmvNonAdd_Fire := "Remove a random non-Fire modifier from an item and add a new Fire modifier"
 RAW_RmvNonAdd_Speed := "Remove a random non-Speed modifier from an item and add a new Speed modifier"
-RAW_RmvNonAdd_Critical := "Remove a random non-Crit modifier from an item and add a new Critical modifier"
+RAW_RmvNonAdd_Critical := "Remove a random non-Critical modifier from an item and add a new Critical modifier"
 RAW_RmvNonAdd_Influence := "Remove a random non-Influence modifier from an item and add a new Influence modifier"
 
 ; == Augment (Lucky) ==
