@@ -142,22 +142,22 @@ Sockets_4S := settings.Sockets.Sockets_4S
 Sockets_3S := settings.Sockets.Sockets_3S
 
 ; == Socket Colors ==
-Color_x10 := settings.SocketColors.Color_x10                           ; Reforge the {colours of sockets} on an item 10 times, using the outcome with the greatest number of less-common socket colours
-Color_White := settings.SocketColors.Color_White                       ; Reforge the colour of a random {socket} on an item, turning it {White}
-Color_Blue := settings.SocketColors.Color_Blue                         ; Reforge the colour of a {non-Blue} socket on an item, turning it {Blue}
-Color_Green := settings.SocketColors.Color_Green                       ; Reforge the colour of a {non-Green} socket on an item, turning it {Green}
-Color_Red := settings.SocketColors.Color_Red                           ; Reforge the colour of a {non-Red} socket on an item, turning it {Red}
-Color_RedBlueGreen := settings.SocketColors.Color_RedBlueGreen         ; Reforge the colour of {three random} sockets on an item, turning them {Red, Green and Blue}
-Color_BlueGreen := settings.SocketColors.Color_BlueGreen               ; Reforge the colour of {two random} sockets on an item, turning them {Blue and Green}
-Color_RedBlue := settings.SocketColors.Color_RedBlue                   ; Reforge the colour of {two random} sockets on an item, turning them {Red and Blue}
-Color_RedGreen := settings.SocketColors.Color_RedGreen                 ; Reforge the colour of {two random} sockets on an item, turning them {Red and Green}
+Color_x10 := settings.Color.Color_x10                           ; Reforge the {colours of sockets} on an item 10 times, using the outcome with the greatest number of less-common socket colours
+Color_White := settings.Color.Color_White                       ; Reforge the colour of a random {socket} on an item, turning it {White}
+Color_Blue := settings.Color.Color_Blue                         ; Reforge the colour of a {non-Blue} socket on an item, turning it {Blue}
+Color_Green := settings.Color.Color_Green                       ; Reforge the colour of a {non-Green} socket on an item, turning it {Green}
+Color_Red := settings.Color.Color_Red                           ; Reforge the colour of a {non-Red} socket on an item, turning it {Red}
+Color_RedBlueGreen := settings.Color.Color_RedBlueGreen         ; Reforge the colour of {three random} sockets on an item, turning them {Red, Green and Blue}
+Color_BlueGreen := settings.Color.Color_BlueGreen               ; Reforge the colour of {two random} sockets on an item, turning them {Blue and Green}
+Color_RedBlue := settings.Color.Color_RedBlue                   ; Reforge the colour of {two random} sockets on an item, turning them {Red and Blue}
+Color_RedGreen := settings.Color.Color_RedGreen                 ; Reforge the colour of {two random} sockets on an item, turning them {Red and Green}
 
 ; == Socket Links ==
-Links_x10 := settings.SocketLinks.Links_x10                            ; Reforge the {links between sockets} on an item 10 times, using the outcome with the greatest number of linked sockets
-Links_6L := settings.SocketLinks.Links_6L 
-Links_5L := settings.SocketLinks.Links_5L 
-Links_4L := settings.SocketLinks.Links_4L 
-Links_3L := settings.SocketLinks.Links_3L 
+Links_x10 := settings.Links.Links_x10                            ; Reforge the {links between sockets} on an item 10 times, using the outcome with the greatest number of linked sockets
+Links_6L := settings.Links.Links_6L 
+Links_5L := settings.Links.Links_5L 
+Links_4L := settings.Links.Links_4L 
+Links_3L := settings.Links.Links_3L 
 
 ; == Influence ==
 Influence_Weapon := settings.Influence.Influence_Weapon
@@ -166,22 +166,22 @@ Influence_Jewellery := settings.Influence.Influence_Jewellery
 
 
 ; == Enchant Weapon ==
-Enchant_AoE := settings.EnchantWeapon.Enchant_AoE
-Enchant_Ele := settings.EnchantWeapon.Enchant_Ele
-Enchant_Range := settings.EnchantWeapon.Enchant_Range
-Enchant_Accuracy := settings.EnchantWeapon.Enchant_Accuracy
-Enchant_AttackSpeed := settings.EnchantWeapon.Enchant_AttackSpeed
-Enchant_Crit := settings.EnchantWeapon.Enchant_Crit
+Enchant_AoE := settings.Enchant.Enchant_AoE
+Enchant_Ele := settings.Enchant.Enchant_Ele
+Enchant_Range := settings.Enchant.Enchant_Range
+Enchant_Accuracy := settings.Enchant.Enchant_Accuracy
+Enchant_AttackSpeed := settings.Enchant.Enchant_AttackSpeed
+Enchant_Crit := settings.Enchant.Enchant_Crit
 
 ; == Enchant Body Armour ==
-Enchant_Life := settings.EnchantArmour.Enchant_Life
-Enchant_Str := settings.EnchantArmour.Enchant_Str
-Enchant_Mana := settings.EnchantArmour.Enchant_Mana
-Enchant_Dex := settings.EnchantArmour.Enchant_Dex
-Enchant_Int := settings.EnchantArmour.Enchant_Int
-Enchant_Fire := settings.EnchantArmour.Enchant_Fire
-Enchant_Cold := settings.EnchantArmour.Enchant_Cold
-Enchant_Lightning := settings.EnchantArmour.Enchant_Lightning
+Enchant_Life := settings.Enchant.Enchant_Life
+Enchant_Str := settings.Enchant.Enchant_Str
+Enchant_Mana := settings.Enchant.Enchant_Mana
+Enchant_Dex := settings.Enchant.Enchant_Dex
+Enchant_Int := settings.Enchant.Enchant_Int
+Enchant_Fire := settings.Enchant.Enchant_Fire
+Enchant_Cold := settings.Enchant.Enchant_Cold
+Enchant_Lightning := settings.Enchant.Enchant_Lightning
 
 ; == Other ==
 Synth_Implicit := settings.Other.Synth_Implicit

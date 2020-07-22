@@ -93,11 +93,12 @@
     },
     "Sockets" : {
         "Sockets_x10" : "-",
+        "Sockets_6S" : "-",
         "Sockets_5S" : "-",
         "Sockets_4S" : "-",
         "Sockets_3S" : "-"
     },
-    "SocketColors" : {
+    "Color" : {
         "Color_x10" : "-",                 
         "Color_White" : "-",               
         "Color_Blue" : "-",                
@@ -108,7 +109,7 @@
         "Color_RedBlue" : "-",           
         "Color_RedGreen" : "-"  
     },
-    "SocketLinks" : {
+    "Links" : {
         "Links_x10" : "-",
         "Links_6L" : "-",
         "Links_5L" : "-",
@@ -120,15 +121,13 @@
         "Influence_Armor" : "-",
         "Influence_Jewellery" : "-"
     },
-    "EnchantWeapon" : {
+    "Enchant" : {
         "Enchant_AoE" : "-",
         "Enchant_Ele" : "-",
         "Enchant_Range" : "-",
         "Enchant_Accuracy" : "-",
         "Enchant_AttackSpeed" : "-",
-        "Enchant_Crit" : "-"
-    },
-    "EnchantArmour" : {
+        "Enchant_Crit" : "-",
         "Enchant_Life" : "-",
         "Enchant_Str" : "-",
         "Enchant_Mana" : "-",
