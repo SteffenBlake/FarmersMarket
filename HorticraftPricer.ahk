@@ -22,6 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+#Include, lib/json.ahk
+
 ; PLEASE ENSURE YOU HAVE DOWNLOADED THIS SCRIPT FROM THE ORIGINAL SOURCE
 ; https://github.com/SteffenBlake/FarmersMarket
 
@@ -29,169 +31,171 @@ SOFTWARE.
 ; Have any questions? Want to ask me anything? Feel free to hit me up on my twitch! https://www.twitch.tv/pixxelkick
 ; Live streaming during the evening!
 
-; === Modify your prices below, examples: "20c", "10ex", "3mir", leave as "-" to ignore ===
+; === Modify your prices in config.json, examples: "20c", "10ex", "3mir", leave as "-" to ignore ===
+FileRead, settingsFile, config.json
+settings := JSON.Load(settingsFile)
 
 ; == Remove ==
 ; {Remove} a random {****} modifier from an item
-Rmv_Phys := "-"
-Rmv_Attack := "-"
-Rmv_Lightning := "-"
-Rmv_Cold := "-"
-Rmv_Defence := "-"
-Rmv_Chaos := "-"
-Rmv_Life := "-"
-Rmv_Caster := "-"
-Rmv_Fire := "-"
-Rmv_Speed := "-"
-Rmv_Critical := "-"
-Rmv_Influence := "-"
+Rmv_Phys := settings.Rmv.Rmv_Phys
+Rmv_Attack := settings.Rmv.Rmv_Attack
+Rmv_Lightning := settings.Rmv.Rmv_Lightning
+Rmv_Cold := settings.Rmv.Rmv_Cold
+Rmv_Defence := settings.Rmv.Rmv_Defence
+Rmv_Chaos := settings.Rmv.Rmv_Chaos
+Rmv_Life := settings.Rmv.Rmv_Life
+Rmv_Caster := settings.Rmv.Rmv_Caster
+Rmv_Fire := settings.Rmv.Rmv_Fire
+Rmv_Speed := settings.Rmv.Rmv_Speed
+Rmv_Critical := settings.Rmv.Rmv_Critical
+Rmv_Influence := settings.Rmv.Rmv_Influence
 
 ; == Remove > Add ==
 ; {Remove} a random {****} modifier from an item and {add} a new {****} modifier
-RmvAdd_Phys := "-"
-RmvAdd_Attack := "-"
-RmvAdd_Lightning := "-"
-RmvAdd_Cold := "-"
-RmvAdd_Defence := "-"
-RmvAdd_Chaos := "-"
-RmvAdd_Life := "-"
-RmvAdd_Caster := "-"
-RmvAdd_Fire := "-"
-RmvAdd_Speed := "-"
-RmvAdd_Critical := "-"
-RmvAdd_Influence := "-"
+RmvAdd_Phys := settings.RmvAdd.RmvAdd_Phys
+RmvAdd_Attack := settings.RmvAdd.RmvAdd_Attack
+RmvAdd_Lightning := settings.RmvAdd.RmvAdd_Lightning
+RmvAdd_Cold := settings.RmvAdd.RmvAdd_Cold
+RmvAdd_Defence := settings.RmvAdd.RmvAdd_Defence
+RmvAdd_Chaos := settings.RmvAdd.RmvAdd_Chaos
+RmvAdd_Life := settings.RmvAdd.RmvAdd_Life
+RmvAdd_Caster := settings.RmvAdd.RmvAdd_Caster
+RmvAdd_Fire := settings.RmvAdd.RmvAdd_Fire
+RmvAdd_Speed := settings.RmvAdd.RmvAdd_Speed
+RmvAdd_Critical := settings.RmvAdd.RmvAdd_Critical
+RmvAdd_Influence := settings.RmvAdd.RmvAdd_Influence
 
 ; == Remove Non > Add ==
 ; {Remove} a random {non-****} modifier from an item and {add} a new {****} modifier
-RmvNonAdd_Phys := "-"
-RmvNonAdd_Attack := "-"
-RmvNonAdd_Lightning := "-"
-RmvNonAdd_Cold := "-"
-RmvNonAdd_Defence := "-"
-RmvNonAdd_Chaos := "-"
-RmvNonAdd_Life := "-"
-RmvNonAdd_Caster := "-"
-RmvNonAdd_Fire := "-"
-RmvNonAdd_Speed := "-"
-RmvNonAdd_Critical := "-"
-RmvNonAdd_Influence := "-"
+RmvNonAdd_Phys := settings.RmvNonAdd.RmvNonAdd_Phys
+RmvNonAdd_Attack := settings.RmvNonAdd.RmvNonAdd_Attack
+RmvNonAdd_Lightning := settings.RmvNonAdd.RmvNonAdd_Attack
+RmvNonAdd_Cold := settings.RmvNonAdd.RmvNonAdd_Cold
+RmvNonAdd_Defence := settings.RmvNonAdd.RmvNonAdd_Defence
+RmvNonAdd_Chaos := settings.RmvNonAdd.RmvNonAdd_Chaos
+RmvNonAdd_Life := settings.RmvNonAdd.RmvNonAdd_Life
+RmvNonAdd_Caster := settings.RmvNonAdd.RmvNonAdd_Caster
+RmvNonAdd_Fire := settings.RmvNonAdd.RmvNonAdd_Fire
+RmvNonAdd_Speed := settings.RmvNonAdd.RmvNonAdd_Speed
+RmvNonAdd_Critical := settings.RmvNonAdd.RmvNonAdd_Critical
+RmvNonAdd_Influence := settings.RmvNonAdd.RmvNonAdd_Influence
 
 ; == Augment (Normal) == 
 ; {Augment} a Magic or Rare item with a new {****} modifier
-Augment_Phys := "-"
-Augment_Attack := "-"
-Augment_Lightning := "-"
-Augment_Cold := "-"
-Augment_Defence := "-"
-Augment_Chaos := "-"
-Augment_Life := "-"
-Augment_Caster := "-"
-Augment_Fire := "-"
-Augment_Speed := "-"
-Augment_Critical := "-"
-Augment_Influence := "-"
+Augment_Phys := settings.Augment.Augment_Phys
+Augment_Attack := settings.Augment.Augment_Attack
+Augment_Lightning := settings.Augment.Augment_Lightning
+Augment_Cold := settings.Augment.Augment_Cold
+Augment_Defence := settings.Augment.Augment_Defence
+Augment_Chaos := settings.Augment.Augment_Chaos
+Augment_Life := settings.Augment.Augment_Life
+Augment_Caster := settings.Augment.Augment_Caster
+Augment_Fire := settings.Augment.Augment_Fire
+Augment_Speed := settings.Augment.Augment_Speed
+Augment_Critical := settings.Augment.Augment_Critical
+Augment_Influence := settings.Augment.Augment_Influence
 
 ; == Augment (Lucky) ==
 ; {Augment} a Magic or Rare item with a new {****} modifier with Lucky values
-AugmentLucky_Phys := "-"
-AugmentLucky_Attack := "-"
-AugmentLucky_Lightning := "-"
-AugmentLucky_Cold := "-"
-AugmentLucky_Defence := "-"
-AugmentLucky_Chaos := "-"
-AugmentLucky_Life := "-"
-AugmentLucky_Caster := "-"
-AugmentLucky_Fire := "-"
-AugmentLucky_Speed := "-"
-AugmentLucky_Critical := "-"
-AugmentLucky_Influence := "-"
+AugmentLucky_Phys := settings.AugmentLucky.AugmentLucky_Phys
+AugmentLucky_Attack := settings.AugmentLucky.AugmentLucky_Attack
+AugmentLucky_Lightning := settings.AugmentLucky.AugmentLucky_Lightning
+AugmentLucky_Cold := settings.AugmentLucky.AugmentLucky_Cold
+AugmentLucky_Defence := settings.AugmentLucky.AugmentLucky_Defence
+AugmentLucky_Chaos := settings.AugmentLucky.AugmentLucky_Chaos
+AugmentLucky_Life := settings.AugmentLucky.AugmentLucky_Life
+AugmentLucky_Caster := settings.AugmentLucky.AugmentLucky_Caster
+AugmentLucky_Fire := settings.AugmentLucky.AugmentLucky_Fire
+AugmentLucky_Speed := settings.AugmentLucky.AugmentLucky_Speed
+AugmentLucky_Critical := settings.AugmentLucky.AugmentLucky_Critical
+AugmentLucky_Influence := settings.AugmentLucky.AugmentLucky_Influence
 
 ; == Randomise ==
 ; {Randomise} the numeric values of the random {****} modifiers on a Magic or Rare item
-Randomise_Phys := "-"
-Randomise_Attack := "-"
-Randomise_Lightning := "-"
-Randomise_Cold := "-"
-Randomise_Defence := "-"
-Randomise_Chaos := "-"
-Randomise_Life := "-"
-Randomise_Caster := "-"
-Randomise_Fire := "-"
-Randomise_Speed := "-"
-Randomise_Critical := "-"
-Randomise_Influence := "-"
+Randomise_Phys := settings.Randomise.Randomise_Phys
+Randomise_Attack := settings.Randomise.Randomise_Attack
+Randomise_Lightning := settings.Randomise.Randomise_Lightning
+Randomise_Cold := settings.Randomise.Randomise_Cold
+Randomise_Defence := settings.Randomise.Randomise_Defence
+Randomise_Chaos := settings.Randomise.Randomise_Chaos
+Randomise_Life := settings.Randomise.Randomise_Life
+Randomise_Caster := settings.Randomise.Randomise_Caster
+Randomise_Fire := settings.Randomise.Randomise_Fire
+Randomise_Speed := settings.Randomise.Randomise_Speed
+Randomise_Critical := settings.Randomise.Randomise_Critical
+Randomise_Influence := settings.Randomise.Randomise_Influence
 
 ; == Change Resist ==
 ; {Change} a modifier that grants {****} Resistance into a similar-tier modifier that grants {****} Resistance
-Fire_To_Cold := "-"
-Fire_To_Lightning := "-"
-Cold_To_Fire := "-"
-Cold_To_Lightning := "-"
-Lightning_To_Fire := "-"
-Lightning_To_Cold := "-"
+Fire_To_Cold := settings.Resists.Fire_To_Cold
+Fire_To_Lightning := settings.Resists.Fire_To_Lightning
+Cold_To_Fire := settings.Resists.Cold_To_Fire
+Cold_To_Lightning := settings.Resists.Cold_To_Lightning
+Lightning_To_Fire := settings.Resists.Lightning_To_Fire
+Lightning_To_Cold := settings.Resists.Lightning_To_Cold
 
 ; == Sockets ==
-Sockets_x10 := "-"                ; Reforge the {number of sockets} on an item 10 times, using the outcome with the greatest number of sockets
-Sockets_6S := "-"
-Sockets_5S := "-"
-Sockets_4S := "-"
-Sockets_3S := "-"
+Sockets_x10 := settings.Sockets.Sockets_x10              ; Reforge the {number of sockets} on an item 10 times, using the outcome with the greatest number of sockets
+Sockets_6S := settings.Sockets.Sockets_6S
+Sockets_5S := settings.Sockets.Sockets_5S
+Sockets_4S := settings.Sockets.Sockets_4S
+Sockets_3S := settings.Sockets.Sockets_3S
 
 ; == Socket Colors ==
-Color_x10 := "-"                  ; Reforge the {colours of sockets} on an item 10 times, using the outcome with the greatest number of less-common socket colours
-Color_White := "-"                ; Reforge the colour of a random {socket} on an item, turning it {White}
-Color_Blue := "-"                 ; Reforge the colour of a {non-Blue} socket on an item, turning it {Blue}
-Color_Green := "-"                ; Reforge the colour of a {non-Green} socket on an item, turning it {Green}
-Color_Red := "-"                  ; Reforge the colour of a {non-Red} socket on an item, turning it {Red}
-Color_RedBlueGreen := "-"         ; Reforge the colour of {three random} sockets on an item, turning them {Red, Green and Blue}
-Color_BlueGreen := "-"            ; Reforge the colour of {two random} sockets on an item, turning them {Blue and Green}
-Color_RedBlue := "-"              ; Reforge the colour of {two random} sockets on an item, turning them {Red and Blue}
-Color_RedGreen := "-"             ; Reforge the colour of {two random} sockets on an item, turning them {Red and Green}
+Color_x10 := settings.Color.Color_x10                           ; Reforge the {colours of sockets} on an item 10 times, using the outcome with the greatest number of less-common socket colours
+Color_White := settings.Color.Color_White                       ; Reforge the colour of a random {socket} on an item, turning it {White}
+Color_Blue := settings.Color.Color_Blue                         ; Reforge the colour of a {non-Blue} socket on an item, turning it {Blue}
+Color_Green := settings.Color.Color_Green                       ; Reforge the colour of a {non-Green} socket on an item, turning it {Green}
+Color_Red := settings.Color.Color_Red                           ; Reforge the colour of a {non-Red} socket on an item, turning it {Red}
+Color_RedBlueGreen := settings.Color.Color_RedBlueGreen         ; Reforge the colour of {three random} sockets on an item, turning them {Red, Green and Blue}
+Color_BlueGreen := settings.Color.Color_BlueGreen               ; Reforge the colour of {two random} sockets on an item, turning them {Blue and Green}
+Color_RedBlue := settings.Color.Color_RedBlue                   ; Reforge the colour of {two random} sockets on an item, turning them {Red and Blue}
+Color_RedGreen := settings.Color.Color_RedGreen                 ; Reforge the colour of {two random} sockets on an item, turning them {Red and Green}
 
-; == Socket Colors ==
-Links_x10 := "-"                  ; Reforge the {links between sockets} on an item 10 times, using the outcome with the greatest number of linked sockets
-Links_6L := "-"
-Links_5L := "-"
-Links_4L := "-"
-Links_3L := "-"
+; == Socket Links ==
+Links_x10 := settings.Links.Links_x10                            ; Reforge the {links between sockets} on an item 10 times, using the outcome with the greatest number of linked sockets
+Links_6L := settings.Links.Links_6L 
+Links_5L := settings.Links.Links_5L 
+Links_4L := settings.Links.Links_4L 
+Links_3L := settings.Links.Links_3L 
 
 ; == Influence ==
-Influence_Weapon := "-"
-Influence_Armor := "-"
-Influence_Jewellery := "-"
+Influence_Weapon := settings.Influence.Influence_Weapon
+Influence_Armor := settings.Influence.Influence_Armor
+Influence_Jewellery := settings.Influence.Influence_Jewellery
 
 
 ; == Enchant Weapon ==
-Enchant_AoE := "-"
-Enchant_Ele := "-"
-Enchant_Range := "-"
-Enchant_Accuracy := "-"
-Enchant_AttackSpeed := "-"
-Enchant_Crit := "-"
+Enchant_AoE := settings.Enchant.Enchant_AoE
+Enchant_Ele := settings.Enchant.Enchant_Ele
+Enchant_Range := settings.Enchant.Enchant_Range
+Enchant_Accuracy := settings.Enchant.Enchant_Accuracy
+Enchant_AttackSpeed := settings.Enchant.Enchant_AttackSpeed
+Enchant_Crit := settings.Enchant.Enchant_Crit
 
 ; == Enchant Body Armour ==
-Enchant_Life := "-"
-Enchant_Str := "-"
-Enchant_Mana := "-"
-Enchant_Dex := "-"
-Enchant_Int := "-"
-Enchant_Fire := "-"
-Enchant_Cold := "-"
-Enchant_Lightning := "-"
+Enchant_Life := settings.Enchant.Enchant_Life
+Enchant_Str := settings.Enchant.Enchant_Str
+Enchant_Mana := settings.Enchant.Enchant_Mana
+Enchant_Dex := settings.Enchant.Enchant_Dex
+Enchant_Int := settings.Enchant.Enchant_Int
+Enchant_Fire := settings.Enchant.Enchant_Fire
+Enchant_Cold := settings.Enchant.Enchant_Cold
+Enchant_Lightning := settings.Enchant.Enchant_Lightning
 
 ; == Other ==
-Synth_Implicit := "-"
-Fracture_5Affix := "-"
-Fracture_3Prefix := "-"
-Fracture_3Suffix := "-"
-KeepPrefixes_Normal := "-"       ; Reforge a Rare item, keeping all {Prefixes}
-KeepPrefixes_Lucky := "-"        ; Reforge a Rare item with Lucky modifier values, keeping all {Prefixes}
-KeepSuffixes_Normal := "-"       ; Reforge a Rare item, keeping all {Suffixes}
-KeepSuffixes_Lucky := "-"        ; Reforge a Rare item with Lucky modifier values, keeping all {Suffixes}
-Reroll_Lucky := "-"
-Jewel_Implicit_Normal := "-"     ; Set implicit on Cobalt/Viridian/Crimson/Prismatic jewel
-Jewel_Implicit_Special := "-"    ; Set implicit on Timeless or Abyss jewel
-Jewel_Implicit_Cluster := "-"    ; Set implicit on Cluster Jewel
+Synth_Implicit := settings.Other.Synth_Implicit
+Fracture_5Affix := settings.Other.Fracture_5Affix
+Fracture_3Prefix := settings.Other.Fracture_3Prefix
+Fracture_3Suffix := settings.Other.Fracture_3Suffix
+KeepPrefixes_Normal := settings.Other.KeepPrefixes_Normal              ; Reforge a Rare item, keeping all {Prefixes}
+KeepPrefixes_Lucky := settings.Other.KeepPrefixes_Lucky                ; Reforge a Rare item with Lucky modifier values, keeping all {Prefixes}
+KeepSuffixes_Normal := settings.Other.KeepSuffixes_Normal              ; Reforge a Rare item, keeping all {Suffixes}
+KeepSuffixes_Lucky := settings.Other.KeepSuffixes_Lucky                ; Reforge a Rare item with Lucky modifier values, keeping all {Suffixes}
+Reroll_Lucky := settings.Other.Reroll_Lucky
+Jewel_Implicit_Normal := settings.Other.Jewel_Implicit_Normal          ; Set implicit on Cobalt/Viridian/Crimson/Prismatic jewel
+Jewel_Implicit_Special := settings.Other.Jewel_Implicit_Special        ; Set implicit on Timeless or Abyss jewel
+Jewel_Implicit_Cluster := settings.Other.Jewel_Implicit_Cluster        ; Set implicit on Cluster Jewel
 
 ; ==============================================================================
 ; WARNING, DO NOT MODIFY ANYTHING BELOW THIS LINE, ACTUAL FUNCTIONALITY IS BELOW

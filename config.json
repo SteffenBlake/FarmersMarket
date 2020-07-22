@@ -1,0 +1,156 @@
+{
+    "Rmv" : {
+        "Rmv_Phys" : "-",
+        "Rmv_Attack" : "-",
+        "Rmv_Lightning" : "-",
+        "Rmv_Cold" : "-",
+        "Rmv_Defence" : "-",
+        "Rmv_Chaos" : "-",
+        "Rmv_Life" : "-",
+        "Rmv_Caster" : "-",
+        "Rmv_Fire" : "-",
+        "Rmv_Speed" : "-",
+        "Rmv_Critical" : "-",
+        "Rmv_Influence" : "-"
+     },
+    "RmvAdd" : {
+        "RmvAdd_Phys" : "-",
+        "RmvAdd_Attack" : "-",
+        "RmvAdd_Lightning" : "-",
+        "RmvAdd_Cold" : "-",
+        "RmvAdd_Defence" : "-",
+        "RmvAdd_Chaos" : "-",
+        "RmvAdd_Life" : "-",
+        "RmvAdd_Caster" : "-",
+        "RmvAdd_Fire" : "-",
+        "RmvAdd_Speed" : "-",
+        "RmvAdd_Critical" : "-",
+        "RmvAdd_Influence" : "-"
+    },
+    "RmvNonAdd" : {
+        "RmvNonAdd_Phys" : "-",
+        "RmvNonAdd_Attack" : "-",
+        "RmvNonAdd_Lightning" : "-",
+        "RmvNonAdd_Cold" : "-",
+        "RmvNonAdd_Defence" : "-",
+        "RmvNonAdd_Chaos" : "-",
+        "RmvNonAdd_Life" : "-",
+        "RmvNonAdd_Caster" : "-",
+        "RmvNonAdd_Fire" : "-",
+        "RmvNonAdd_Speed" : "-",
+        "RmvNonAdd_Critical" : "-",
+        "RmvNonAdd_Influence" : "-"
+    },
+    "Augment" : {
+        "Augment_Phys" : "-",
+        "Augment_Attack" : "-",
+        "Augment_Lightning" : "-",
+        "Augment_Cold" : "-",
+        "Augment_Defence" : "-",
+        "Augment_Chaos" : "-",
+        "Augment_Life" : "-",
+        "Augment_Caster" : "-",
+        "Augment_Fire" : "-",
+        "Augment_Speed" : "-",
+        "Augment_Critical" : "-",
+        "Augment_Influence" : "-"
+    },
+    "AugmentLucky" : {
+        "AugmentLucky_Phys" : "-",
+        "AugmentLucky_Attack" : "-",
+        "AugmentLucky_Lightning" : "-",
+        "AugmentLucky_Cold" : "-",
+        "AugmentLucky_Defence" : "-",
+        "AugmentLucky_Chaos" : "-",
+        "AugmentLucky_Life" : "-",
+        "AugmentLucky_Caster" : "-",
+        "AugmentLucky_Fire" : "-",
+        "AugmentLucky_Speed" : "-",
+        "AugmentLucky_Critical" : "-",
+        "AugmentLucky_Influence" : "-"
+    },
+    "Randomise" : {
+        "Randomise_Phys" : "-",
+        "Randomise_Attack" : "-",
+        "Randomise_Lightning" : "-",
+        "Randomise_Cold" : "-",
+        "Randomise_Defence" : "-",
+        "Randomise_Chaos" : "-",
+        "Randomise_Life" : "-",
+        "Randomise_Caster" : "-",
+        "Randomise_Fire" : "-",
+        "Randomise_Speed" : "-",
+        "Randomise_Critical" : "-",
+        "Randomise_Influence" : "-"
+    },
+    "Resists" : {
+        "Fire_To_Cold" : "-",
+        "Fire_To_Lightning" : "-",
+        "Cold_To_Fire" : "-",
+        "Cold_To_Lightning" : "-",
+        "Lightning_To_Fire" : "-",
+        "Lightning_To_Cold" : "-"
+    },
+    "Sockets" : {
+        "Sockets_x10" : "-",
+        "Sockets_6S" : "-",
+        "Sockets_5S" : "-",
+        "Sockets_4S" : "-",
+        "Sockets_3S" : "-"
+    },
+    "Color" : {
+        "Color_x10" : "-",                 
+        "Color_White" : "-",               
+        "Color_Blue" : "-",                
+        "Color_Green" : "-",               
+        "Color_Red" : "-",                 
+        "Color_RedBlueGreen" : "-",        
+        "Color_BlueGreen" : "-",           
+        "Color_RedBlue" : "-",           
+        "Color_RedGreen" : "-"  
+    },
+    "Links" : {
+        "Links_x10" : "-",
+        "Links_6L" : "-",
+        "Links_5L" : "-",
+        "Links_4L" : "-",
+        "Links_3L" : "-"
+    },
+    "Influence" : {
+        "Influence_Weapon" : "-",
+        "Influence_Armor" : "-",
+        "Influence_Jewellery" : "-"
+    },
+    "Enchant" : {
+        "Enchant_AoE" : "-",
+        "Enchant_Ele" : "-",
+        "Enchant_Range" : "-",
+        "Enchant_Accuracy" : "-",
+        "Enchant_AttackSpeed" : "-",
+        "Enchant_Crit" : "-",
+        "Enchant_Life" : "-",
+        "Enchant_Str" : "-",
+        "Enchant_Mana" : "-",
+        "Enchant_Dex" : "-",
+        "Enchant_Int" : "-",
+        "Enchant_Fire" : "-",
+        "Enchant_Cold" : "-",
+        "Enchant_Lightning" : "-"
+    },
+    "Other" : {
+        "Synth_Implicit" : "-",
+        "Fracture_5Affix" : "-",
+        "Fracture_3Prefix" : "-",
+        "Fracture_3Suffix" : "-",
+        "KeepPrefixes_Normal" : "-",  
+        "KeepPrefixes_Lucky" : "-",
+        "KeepSuffixes_Normal" : "-",
+        "KeepSuffixes_Lucky" : "-",
+        "Reroll_Lucky" : "-",
+        "Jewel_Implicit_Normal" : "-",
+        "Jewel_Implicit_Special" : "-",
+        "Jewel_Implicit_Cluster" : "-"
+    }
+ 
+
+ }
